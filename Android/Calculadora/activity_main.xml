@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextVal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <EditText
+        android:id="@+id/editTextVal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Primeiro Valor"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextVal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado"
+        app:layout_constraintVertical_bias="0.232">
+
+        <Button
+            android:id="@+id/btnSomar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <Button
+            android:id="@+id/btnSubtrair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="478dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextVal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="Segundo Valor"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Último resultado:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVal2"
+        app:layout_constraintVertical_bias="0.11" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
